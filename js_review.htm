@@ -22,13 +22,18 @@
         // });
         
         // JSON object
-        let point = new Object();
-        point.x=3;
-        point.y=4;
-        point.show=function(){
+        // let point = new Object();
+        // point.x=3;
+        // point.y=4;
+        // point.show=function(){
+        //     alert(this.x+","+this.y);
+        // };
+        // console.log(point);
+        let point={x:3,y:3,show:function(){
             alert(this.x+","+this.y);
-        };
+        }}; // Same as let point = new Object();
         console.log(point);
+        point.show(0)
     </script>
 </head>
 <body>
