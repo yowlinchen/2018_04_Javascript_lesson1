@@ -10,16 +10,25 @@
         //     alert("Hello");
         // };
         // test();
-        let test =function(n1,n2,callback) {
-            callback(n1*n2);
+        // let test =function(n1,n2,callback) {
+        //     callback(n1*n2);
+        // };
+        // let handler=function(result){
+        //     alert(result);
+        // };
+        // test(3,4,handler);
+        // test(5,6,function(result) {
+        //     console.log(result);
+        // });
+        
+        // JSON object
+        let point = new Object();
+        point.x=3;
+        point.y=4;
+        point.show=function(){
+            alert(this.x+","+this.y);
         };
-        let handler=function(result){
-            alert(result);
-        };
-        test(3,4,handler);
-        test(5,6,function(result) {
-            console.log(result);
-        });
+        console.log(point);
     </script>
 </head>
 <body>
