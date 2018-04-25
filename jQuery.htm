@@ -20,7 +20,9 @@
             $("h3").css({color:"red",fontWeight:"normal"}); // Tag selector
             $(".item").css({opacity:1}); // class selector 
             $("#favorite>.item").css({textDecoration:"underline"}); // Select the upper 2 li
-
+            $("#major>.item").on("click",function(){
+                alert("Clicked");
+            });
         }
     </script>
     <style>
@@ -38,7 +40,7 @@
         <li class="item">Facebook</li>
     </ul>
     <h3>My Expertise</h3>
-    <ul>
+    <ul id="major">
         <li class="item">Website Design</li>
         <li class="item">Play Basketball</li>
     </ul>
