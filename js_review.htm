@@ -10,10 +10,13 @@
         //     alert("Hello");
         // };
         // test();
-        let test =function(n1,n2) {
-            alert(n1*n2);
+        let test =function(n1,n2,callback) {
+            callback(n1*n2);
         };
-        test(3,4);
+        let handler=function(result){
+            alert(result);
+        };
+        test(3,4,handler);
     </script>
 </head>
 <body>
