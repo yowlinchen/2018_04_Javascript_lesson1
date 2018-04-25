@@ -21,7 +21,9 @@
             $(".item").css({opacity:1}); // class selector 
             $("#favorite>.item").css({textDecoration:"underline"}); // Select the upper 2 li
             $("#major>.item").on("click",function(){
-                alert("Clicked");
+                // alert("Clicked");
+                // if using "this" in event handling function , represents HTML element
+                alert(this.innerHTML);
             });
         }
     </script>
