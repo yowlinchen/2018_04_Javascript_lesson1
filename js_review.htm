@@ -13,10 +13,40 @@
         // let test =function(n1,n2,callback) {
         //     callback(n1*n2);
         // };
+        /*
+            args: object
+                - n1: integer
+                - n2: integer
+                - callback: function
+        */
+        let test =function(args) {
+            args.callback(args.n1*args.n2);
+        };
         // let handler=function(result){
         //     alert(result);
         // };
         // test(3,4,handler);
+        // test(5,6,function(result) {
+        //     console.log(result);
+        // });
+
+        // First way
+        // let obj=new object();
+        // obj.n1=5;
+        // obj.n2=6;
+        // obj.callback=function(result) {
+        //     console.log(result);
+        // }
+        // test(obj);
+
+        // Second way
+        test({
+            n1:5,
+            n2:6,
+            callback:function(result) {
+                console.log(result);
+            }
+        });
         // test(5,6,function(result) {
         //     console.log(result);
         // });
