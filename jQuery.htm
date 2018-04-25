@@ -18,7 +18,9 @@
             // $(選則器);
             $("#content").fadeOut(); // ID selector
             $("h3").css({color:"red",fontWeight:"normal"}); // Tag selector
-            $(".item").css({opacity:1}); // class selector
+            $(".item").css({opacity:1}); // class selector 
+            $("#favorite>.item").css({textDecoration:"underline"}); // Select the upper 2 li
+
         }
     </script>
     <style>
@@ -31,7 +33,7 @@
     <h3>JQuery test Example</h3>
     <div id="content">今天天氣真好</div>
     <h3>我的最愛</h3>
-    <ul>
+    <ul id="favorite">
         <li class="item">google</li>
         <li class="item">Facebook</li>
     </ul>
