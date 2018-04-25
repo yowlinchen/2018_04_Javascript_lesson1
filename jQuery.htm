@@ -16,13 +16,19 @@
             // content.innerHTML="今天心情真好";
             
             // $(選則器);
-            content = $("#content").fadeOut();
+            $("#content").fadeOut(); // ID selector
+            $("h3").css({color:"red"}); // Tag selector
         }
     </script>
 </head>
 <body>
     <h3>JQuery test Example</h3>
     <div id="content">今天天氣真好</div>
+    <h3>我的最愛</h3>
+    <ul>
+        <li>google</li>
+        <li>Facebook</li>
+    </ul>
     <button onclick="change();">點擊</button>
 </body>
 </html>
