@@ -16,10 +16,13 @@
             // content.innerHTML="今天心情真好";
             
             // $(選則器);
-            $("#content").fadeOut(); // ID selector
+            let display=$("#content").css("display");
+            alert(display);
+            // $("#content").fadeOut(); // ID selector
             $("h3").css({color:"red",fontWeight:"normal"}); // Tag selector
             $(".item").css({opacity:1}); // class selector 
-            $("#favorite>.item").css({textDecoration:"underline"}); // Select the upper 2 li
+            // $("#favorite>.item").css({textDecoration:"underline"}); // Select the upper 2 li
+            $("#favorite>.item").css("textDecoration","underline"); // Select the upper 2 li
             $("#major>.item").on("click",function(){
                 // alert("Clicked");
                 // if using "this" in event handling function , represents HTML element
